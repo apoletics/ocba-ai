@@ -1,0 +1,462 @@
+[
+    {
+        "question": "OceanBase 4.0 是一个分布式关系型数据库。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库支持 MySQL 和 Oracle 两种兼容模式。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 集群中，每个节点只能属于一个 Zone。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的 CLOG 主要用于存储事务日志。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 仅支持行存储，不支持列存储。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OBProxy 是 OceanBase 数据库的专用代理服务器。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库的默认端口是 3306。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 支持在线扩容和缩容操作。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "在 OceanBase 中，租户是资源分配的基本单位。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的事务隔离级别不包括 READ COMMITTED。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库不支持触发器功能。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Zone 是 OceanBase 集群中的一个逻辑概念，通常对应一个机房或可用区。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的 SQL 引擎不支持窗口函数。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库的备份文件只能存储在本地磁盘。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 支持自动故障转移功能。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "以下哪个不是 OceanBase 4.0 的核心特性？",
+        "options": {
+            "A": "分布式架构",
+            "B": "兼容 MySQL 语法",
+            "C": "仅支持单机部署",
+            "D": "强一致性"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 集群中，负责元数据管理的模块是？",
+        "options": {
+            "A": "RootService",
+            "B": "OBProxy",
+            "C": "ChunkServer",
+            "D": "MergeServer"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "以下哪个工具用于 OceanBase 数据库的部署和管理？",
+        "options": {
+            "A": "OBDeploy",
+            "B": "OBManager",
+            "C": "OBD",
+            "D": "OBAgent"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 中，一个表最多可以有多少个分区？",
+        "options": {
+            "A": "1024",
+            "B": "4096",
+            "C": "65536",
+            "D": "无限制"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "以下哪种不是 OceanBase 支持的分区策略？",
+        "options": {
+            "A": "范围分区",
+            "B": "哈希分区",
+            "C": "列表分区",
+            "D": "随机分区"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "OceanBase 的默认副本数是多少？",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "以下哪个命令用于查看 OceanBase 集群状态？",
+        "options": {
+            "A": "show status",
+            "B": "select * from __all_server",
+            "C": "status cluster",
+            "D": "display cluster"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 中，租户的资源隔离不包括以下哪个方面？",
+        "options": {
+            "A": "CPU",
+            "B": "内存",
+            "C": "网络带宽",
+            "D": "磁盘空间"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "以下哪个不是 OceanBase 的日志类型？",
+        "options": {
+            "A": "CLOG",
+            "B": "SLOG",
+            "C": "REDO LOG",
+            "D": "ilog"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 数据库支持的最大单表大小约为？",
+        "options": {
+            "A": "1TB",
+            "B": "10TB",
+            "C": "100TB",
+            "D": "PB 级"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "以下哪个工具用于 OceanBase 的性能监控？",
+        "options": {
+            "A": "OBMonitor",
+            "B": "Grafana + Prometheus",
+            "C": "OBInspector",
+            "D": "OBAnalyzer"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 中，用于创建租户的 SQL 语句是？",
+        "options": {
+            "A": "CREATE TENANT",
+            "B": "CREATE DATABASE",
+            "C": "CREATE SCHEMA",
+            "D": "CREATE INSTANCE"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "以下哪种索引类型不是 OceanBase 支持的？",
+        "options": {
+            "A": "B 树索引",
+            "B": "哈希索引",
+            "C": "位图索引",
+            "D": "全文索引"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 的存储引擎采用的是哪种架构？",
+        "options": {
+            "A": "LSM-Tree",
+            "B": "B+ Tree",
+            "C": "Hash Table",
+            "D": "ISAM"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "以下哪个不是 OceanBase 支持的备份类型？",
+        "options": {
+            "A": "全量备份",
+            "B": "增量备份",
+            "C": "日志备份",
+            "D": "差异备份"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "在 OceanBase 中，哪个视图可以查看当前活跃会话？",
+        "options": {
+            "A": "v$session",
+            "B": "gv$session",
+            "C": "information_schema.sessions",
+            "D": "sys.sessions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 引入的新特性不包括以下哪项？",
+        "options": {
+            "A": "向量引擎",
+            "B": "原生分布式执行框架",
+            "C": "多主架构",
+            "D": "兼容 PostgreSQL 语法"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "以下哪些是 OceanBase 的核心组件？",
+        "options": {
+            "A": "RootService",
+            "B": "ChunkServer",
+            "C": "OBProxy",
+            "D": "OBD"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 支持的事务隔离级别包括？",
+        "options": {
+            "A": "READ UNCOMMITTED",
+            "B": "READ COMMITTED",
+            "C": "REPEATABLE READ",
+            "D": "SERIALIZABLE"
+        },
+        "answer": "B,C,D"
+    },
+    {
+        "question": "以下哪些是 OceanBase 支持的部署模式？",
+        "options": {
+            "A": "单机部署",
+            "B": "主从部署",
+            "C": "分布式集群部署",
+            "D": "云原生部署"
+        },
+        "answer": "A,C,D"
+    },
+    {
+        "question": "OceanBase 的日志体系包括哪些？",
+        "options": {
+            "A": "CLOG",
+            "B": "SLOG",
+            "C": "ilog",
+            "D": "BINLOG"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "以下哪些工具可以用于 OceanBase 的数据迁移？",
+        "options": {
+            "A": "DataX",
+            "B": "OBLoader/OBUnloader",
+            "C": "mysqldump",
+            "D": "OGG"
+        },
+        "answer": "A,B,D"
+    },
+    {
+        "question": "OceanBase 支持的索引类型有哪些？",
+        "options": {
+            "A": "主键索引",
+            "B": "二级索引",
+            "C": "联合索引",
+            "D": "函数索引"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "以下哪些是 OceanBase 的高可用特性？",
+        "options": {
+            "A": "多副本机制",
+            "B": "自动故障转移",
+            "C": "数据多活",
+            "D": "在线扩容"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 租户可以配置的资源包括？",
+        "options": {
+            "A": "CPU 权重",
+            "B": "内存大小",
+            "C": "磁盘配额",
+            "D": "网络带宽"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "以下哪些是 OceanBase 支持的 SQL 特性？",
+        "options": {
+            "A": "窗口函数",
+            "B": "公用表表达式 (CTE)",
+            "C": "存储过程",
+            "D": "触发器"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 4.0 的新特性包括？",
+        "options": {
+            "A": "原生分布式执行引擎",
+            "B": "向量计算引擎",
+            "C": "智能索引推荐",
+            "D": "自动 SQL 优化"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "以下哪些操作可以在 OceanBase 中在线执行？",
+        "options": {
+            "A": "表结构变更",
+            "B": "索引创建/删除",
+            "C": "租户扩容",
+            "D": "集群节点添加"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 的监控指标可以通过哪些方式获取？",
+        "options": {
+            "A": "系统视图",
+            "B": "Prometheus 接口",
+            "C": "日志文件",
+            "D": "OBAgent"
+        },
+        "answer": "A,B,D"
+    },
+    {
+        "question": "以下哪些是 OceanBase 支持的备份存储位置？",
+        "options": {
+            "A": "本地文件系统",
+            "B": "NFS",
+            "C": "阿里云 OSS",
+            "D": "AWS S3"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 数据库的兼容性包括？",
+        "options": {
+            "A": "MySQL 5.6/5.7 兼容性",
+            "B": "Oracle 11g/12c 兼容性",
+            "C": "PostgreSQL 10+ 兼容性",
+            "D": "SQL Server 2016+ 兼容性"
+        },
+        "answer": "A,B"
+    },
+    {
+        "question": "以下哪些是 OceanBase 分区表的优势？",
+        "options": {
+            "A": "提高查询性能",
+            "B": "便于数据管理",
+            "C": "支持更大数据量",
+            "D": "自动负载均衡"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 的安全特性包括？",
+        "options": {
+            "A": "用户权限管理",
+            "B": "数据加密",
+            "C": "审计日志",
+            "D": "IP 白名单"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "以下哪些是 OceanBase 支持的数据类型？",
+        "options": {
+            "A": "VARCHAR",
+            "B": "JSON",
+            "C": "GEOMETRY",
+            "D": "ARRAY"
+        },
+        "answer": "A,B,C"
+    }
+]
