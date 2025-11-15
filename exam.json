@@ -953,5 +953,493 @@
             "D": "数据库客户端版本"
         },
         "answer": "ABC"
+    },
+    {
+        "question": "OCBA 4.0 认证的核心考察目标之一是验证考生对 OceanBase 4.0 分布式事务优化特性的实操能力。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库的 OCP 工具支持对租户的表空间进行在线扩容，无需暂停业务。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OBCA 认证考试中，数据迁移与同步相关题目占比不超过 15%。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 的轻量租户不支持创建分区表，仅普通租户可使用分区功能。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的 OMS 工具支持从 Oracle 数据库迁移数据到 OceanBase 的 Oracle 模式租户，且可保持存储过程兼容性。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 集群中，OBServer 节点的磁盘空间使用率达到 90% 时，会自动触发只读保护，禁止写入操作。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OCBA 4.0 认证要求考生掌握 OceanBase 4.0 新增的“智能弹性伸缩”功能的配置与监控。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的 OBD 工具部署集群时，默认会创建一个名为“sys”的系统租户和一个普通租户“test”。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库中，MySQL 模式租户支持使用 `LOAD DATA INFILE` 语句导入本地文件数据。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 的异地多活架构中，每个区域的集群必须部署相同数量的 Zone。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OBCA 认证考试的题型仅包含客观题，无主观简答题或实操题。",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 中，用于查看租户当前活跃事务的系统视图是？",
+        "options": {
+            "A": "GV$OB_ACTIVE_TRANS",
+            "B": "GV$OB_TRANSACTION_ACTIVE",
+            "C": "GV$OB_ACTIVE_TRANSACTIONS",
+            "D": "GV$OB_TRANS_ACTIVE"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 4.0 的“智能诊断”功能不支持以下哪种问题检测？",
+        "options": {
+            "A": "索引缺失导致的慢查询",
+            "B": "磁盘 IO 瓶颈",
+            "C": "应用代码语法错误",
+            "D": "副本同步延迟"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "关于 OceanBase 的表空间，以下说法正确的是？",
+        "options": {
+            "A": "租户创建后仅能使用默认表空间，不可新增",
+            "B": "表空间可跨 Zone 分布存储数据",
+            "C": "表空间大小不可调整，创建时需指定固定值",
+            "D": "系统租户与普通租户共享表空间资源"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 集群中，RootService 不负责以下哪项工作？",
+        "options": {
+            "A": "租户资源分配",
+            "B": "SQL 语句解析",
+            "C": "副本分布调度",
+            "D": "OBServer 节点管理"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 中，轻量租户的资源单元（Unit）最小内存配置是？",
+        "options": {
+            "A": "512MB",
+            "B": "1GB",
+            "C": "2GB",
+            "D": "4GB"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "使用 OCP 工具创建 OceanBase 租户时，不可以指定的参数是？",
+        "options": {
+            "A": "租户名称",
+            "B": "SQL 模式",
+            "C": "默认表空间大小",
+            "D": "集群管理员账号密码"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "OceanBase 中，事务提交时采用的“多数派确认”机制，其核心目的是？",
+        "options": {
+            "A": "提升提交速度",
+            "B": "保障数据一致性与高可用",
+            "C": "减少日志存储量",
+            "D": "降低网络带宽占用"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的 ODC 工具不支持以下哪种操作？",
+        "options": {
+            "A": "SQL 脚本导出",
+            "B": "数据库备份与恢复",
+            "C": "表结构对比",
+            "D": "执行计划可视化"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 中，以下哪种副本类型可参与 Leader 选举？",
+        "options": {
+            "A": "全功能副本",
+            "B": "只读副本",
+            "C": "仲裁副本",
+            "D": "备份副本"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 集群扩容添加新 Zone 后，以下哪种操作需要手动执行？",
+        "options": {
+            "A": "副本自动同步到新 Zone",
+            "B": "将租户资源池关联到新 Zone",
+            "C": "新 Zone 自动加入集群负载均衡",
+            "D": "新 Zone 自动注册到 RootService"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 中，以下哪个参数用于控制 MemTable 转储的触发阈值？",
+        "options": {
+            "A": "ob_memtable_dump_trigger",
+            "B": "ob_memtable_size_limit",
+            "C": "ob_dump_memtable_threshold",
+            "D": "ob_memtable_flush_threshold"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "关于 OceanBase 的合并操作，以下说法正确的是？",
+        "options": {
+            "A": "增量合并仅合并新增的 SSTable",
+            "B": "全量合并会重新生成所有基线数据",
+            "C": "合并过程中租户会暂时只读",
+            "D": "合并只能在夜间自动执行"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 租户的“主 Zone”设置，其核心作用是？",
+        "options": {
+            "A": "限制租户仅能在主 Zone 部署",
+            "B": "优先将 Leader 副本部署在主 Zone",
+            "C": "主 Zone 故障时租户自动下线",
+            "D": "仅主 Zone 可执行写操作"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 支持的“跨租户查询”功能，以下说法错误的是？",
+        "options": {
+            "A": "需要授权才能访问其他租户数据",
+            "B": "仅支持查询，不支持写操作",
+            "C": "普通租户可跨租户查询系统租户数据",
+            "D": "可减少数据冗余拷贝"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 中，以下哪种索引在创建时会自动排序数据？",
+        "options": {
+            "A": "B+树索引",
+            "B": "哈希索引",
+            "C": "全文索引",
+            "D": "位图索引"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的 OMS 工具在数据同步时，不支持的同步模式是？",
+        "options": {
+            "A": "全量同步",
+            "B": "增量同步",
+            "C": "双向同步",
+            "D": "跨区域实时同步"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 集群中，OBServer 节点的日志文件不包括以下哪种？",
+        "options": {
+            "A": "observer.log",
+            "B": "transaction.log",
+            "C": "election.log",
+            "D": "rootservice.log"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 的“轻量租户”最多支持创建多少个表？",
+        "options": {
+            "A": "100 个",
+            "B": "500 个",
+            "C": "1000 个",
+            "D": "无限制（受资源约束）"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "关于 OceanBase 的备份加密功能，以下说法正确的是？",
+        "options": {
+            "A": "仅支持对称加密算法",
+            "B": "加密密钥由系统自动生成，不可自定义",
+            "C": "备份文件加密后不可解密，仅能直接恢复",
+            "D": "支持对全量备份和增量备份分别设置加密策略"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 中，以下哪种情况会导致分区 Leader 副本迁移？",
+        "options": {
+            "A": "执行 SELECT 查询",
+            "B": "Leader 所在节点负载过高",
+            "C": "创建新分区",
+            "D": "修改表结构"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 租户的 SQL 模式为 Oracle 时，不支持以下哪种语法？",
+        "options": {
+            "A": "PL/SQL 存储过程",
+            "B": "MySQL 风格的 LIMIT 子句",
+            "C": "Oracle 风格的CONNECT BY 子句",
+            "D": "CREATE SEQUENCE 语句"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 中，用于监控智能弹性伸缩状态的系统视图是？",
+        "options": {
+            "A": "GV$OB_ELASTIC_SCALE_STATUS",
+            "B": "GV$OB_AUTO_SCALE_STATUS",
+            "C": "GV$OB_SMART_SCALE_STATUS",
+            "D": "GV$OB_DYNAMIC_SCALE_STATUS"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的 OCP 工具支持的集群版本管理操作不包括？",
+        "options": {
+            "A": "版本升级",
+            "B": "版本回滚",
+            "C": "跨版本数据迁移",
+            "D": "版本兼容性检测"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 中，以下哪种分区策略适用于按时间范围归档数据的场景？",
+        "options": {
+            "A": "Range 分区",
+            "B": "List 分区",
+            "C": "Hash 分区",
+            "D": "Composite 分区"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 中，“跨 Zone 批量提交”功能主要优化的是哪种事务的性能？",
+        "options": {
+            "A": "单日志流事务",
+            "B": "分布式事务",
+            "C": "只读事务",
+            "D": "短事务"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 中，以下哪个系统视图用于查看索引使用情况？",
+        "options": {
+            "A": "GV$OB_INDEX_USAGE",
+            "B": "GV$OB_INDEX_STAT",
+            "C": "GV$OB_SQL_INDEX",
+            "D": "GV$OB_INDEX_ACCESS"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 租户的资源池调整时，以下哪种操作不会触发数据迁移？",
+        "options": {
+            "A": "增加 Unit 数量",
+            "B": "调整 Unit 内存规格",
+            "C": "删除冗余 Unit",
+            "D": "修改资源池名称"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "OceanBase 4.0 支持的“智能索引推荐”功能，其推荐依据不包括？",
+        "options": {
+            "A": "SQL 执行频率",
+            "B": "表数据量",
+            "C": "索引存储成本",
+            "D": "应用程序类型"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "OceanBase 中，以下哪些属于分布式架构的核心优势？",
+        "options": {
+            "A": "线性扩展能力",
+            "B": "异地多活部署",
+            "C": "单机性能优于集中式数据库",
+            "D": "故障自动隔离"
+        },
+        "answer": "ABD"
+    },
+    {
+        "question": "OceanBase 4.0 提升读性能的技术手段包括？",
+        "options": {
+            "A": "只读副本就近路由",
+            "B": "多级缓存机制",
+            "C": "数据预加载",
+            "D": "日志同步优化"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "关于 OceanBase 的租户隔离机制，以下说法正确的有？",
+        "options": {
+            "A": "CPU 资源按配额隔离，互不抢占",
+            "B": "内存资源独立分配，不会相互影响",
+            "C": "IO 资源通过限流机制隔离",
+            "D": "租户间数据完全隔离，不可跨租户访问"
+        },
+        "answer": "ABCD"
+    },
+    {
+        "question": "OceanBase 数据库支持的备份类型包括？",
+        "options": {
+            "A": "全量备份",
+            "B": "增量备份",
+            "C": "日志备份",
+            "D": "差异备份"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "OceanBase 中，配置事务超时时间的方式包括？",
+        "options": {
+            "A": "修改租户级参数 ob_trx_timeout",
+            "B": "会话级执行 SET ob_trx_timeout = xxx",
+            "C": "SQL 语句中指定 /*+ TRX_TIMEOUT(xxx) */ hint",
+            "D": "修改全局参数 ob_global_trx_timeout"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "OceanBase 4.0 的轻量租户与普通租户的区别包括？",
+        "options": {
+            "A": "资源占用阈值更低",
+            "B": "不支持分布式事务",
+            "C": "启动速度更快",
+            "D": "仅支持 MySQL 模式"
+        },
+        "answer": "AC"
+    },
+    {
+        "question": "以下哪些工具可用于 OceanBase 数据导入？",
+        "options": {
+            "A": "OBLOADER",
+            "B": "LOAD DATA 语句",
+            "C": "OMS 全量同步",
+            "D": "OBDUMPER"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "OceanBase 集群高可用的保障机制包括？",
+        "options": {
+            "A": "多副本数据冗余",
+            "B": "自动故障切换",
+            "C": "仲裁服务兜底",
+            "D": "日志同步多数派确认"
+        },
+        "answer": "ABCD"
+    },
+    {
+        "question": "OceanBase 中，影响 SQL 执行效率的因素包括？",
+        "options": {
+            "A": "索引设计合理性",
+            "B": "分区键选择",
+            "C": "执行计划优化",
+            "D": "租户资源配额"
+        },
+        "answer": "ABCD"
+    },
+    {
+        "question": "OceanBase 4.0 支持的运维自动化功能包括？",
+        "options": {
+            "A": "智能弹性伸缩",
+            "B": "自动备份与清理",
+            "C": "故障自动诊断与修复",
+            "D": "SQL 自动优化"
+        },
+        "answer": "ABCD"
+    },
+    {
+        "question": "关于 OceanBase 的 ODP 组件，以下说法正确的有？",
+        "options": {
+            "A": "实现读写分离",
+            "B": "支持连接池复用",
+            "C": "可路由请求到最优副本",
+            "D": "无需独立部署，与 OBServer 集成"
+        },
+        "answer": "ABC"
+    },
+    {
+        "question": "OceanBase 租户创建时，必须指定的参数包括？",
+        "options": {
+            "A": "租户名称",
+            "B": "SQL 模式",
+            "C": "资源池",
+            "D": "表空间大小"
+        },
+        "answer": "ABC"
     }
 ]
