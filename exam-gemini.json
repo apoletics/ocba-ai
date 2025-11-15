@@ -478,5 +478,486 @@
             "D": "OceanBase 4.x 深度内核调优"
         },
         "answer": "A,B,C"
+    },
+    {
+        "question": "在 OceanBase 4.x 中，單機部署模式下依然可以創建多個租戶 (Tenant) 進行資源隔離。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库的 `sys` 租戶主要用於存放用戶的業務數據。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的「小合併」 (Minor Compaction) 只會合併 MemTable 數據，不會真正刪除已標記為刪除的數據。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "在 OceanBase 4.x 中，即使是存算分離架構，CLog (事務日誌) 依然是寫在 OBServer 的本地磁盤上。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在標準的「三副本」部署中，OceanBase 集群最多可以容忍 2 個副本同時故障而不丟失數據。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 引入的 `obd` 工具也可以用來升級 OCP 平台。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，`GV$` 系列的視圖提供了叢集全局（所有 OBServer 節點）的訊息。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "一個分區 (Partition) 的所有副本（包括 Leader 和 Follower）被合稱為一個「Partition Group」(PG)。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 的存算分離架構中，計算節點 (OBServer) 是有狀態的，因為它緩存了數據。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 數據庫僅支持通過 OBProxy 連線，不允許客戶端直接連接 OBServer 節點。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，負責集群元數據管理、負載均衡和 DDL 操作的核心組件（在 4.0 中作為 `sys` 租戶運行）是？ (单选题)",
+        "options": {
+            "A": "OBProxy",
+            "B": "RootService",
+            "C": "OBAgent",
+            "D": "OBServer"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase (MySQL 模式) 事務的默認隔離級別是？ (单选题)",
+        "options": {
+            "A": "Read Uncommitted (讀未提交)",
+            "B": "Read Committed (讀已提交)",
+            "C": "Repeatable Read (可重覆讀)",
+            "D": "Serializable (序列化)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 BASE 理論中，'S' 代表什麼？ (单选题)",
+        "options": {
+            "A": "Strong Consistency (強一致性)",
+            "B": "Soft State (軟狀態)",
+            "C": "Serializable (序列化)",
+            "D": "Storage (儲存)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 存算分離架構中，基線數據 (SSTable) 被持久化在哪裡？ (单选题)",
+        "options": {
+            "A": "計算節點的本地 SSD",
+            "B": "計算節點的內存",
+            "C": "獨立的共享存儲 (如 HDFS, S3)",
+            "D": "OBProxy 緩存中"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "「大合併」 (Major Compaction) 的主要目的是什麼？ (单选题)",
+        "options": {
+            "A": "僅僅是釋放 MemTable 內存",
+            "B": "合併所有 SSTable 和 MemTable，並物理刪除過期數據",
+            "C": "備份 CLog 日誌",
+            "D": "選舉新的 Leader"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.x 引入的全新命令行部署工具是？ (单选题)",
+        "options": {
+            "A": "ob-deploy.sh",
+            "B": "ocp-agent",
+            "C": "obd (OceanBase Deployer)",
+            "D": "obadmin"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OCP 上，安裝在每台受管主機上，負責收集監控數據和執行 OCP 指令的組件是？ (单选题)",
+        "options": {
+            "A": "OBServer",
+            "B": "OBProxy",
+            "C": "OBAgent",
+            "D": "RootService"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 數據庫的命令行客戶端工具名稱是？ (单选题)",
+        "options": {
+            "A": "mysql",
+            "B": "obclient",
+            "C": "sqlplus",
+            "D": "obsql"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，租戶 (Tenant) 的 `primary_zone` 設置定義了什麼？ (单选题)",
+        "options": {
+            "A": "數據備份的優先區域",
+            "B": "分區 Leader 副本的優先分布區域",
+            "C": "OCP 服務器所在的區域",
+            "D": "CLog 存儲的區域"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 引入的「日誌即數據」(Log-as-Data) 架構，主要簡化了哪種傳統數據庫組件？ (单选题)",
+        "options": {
+            "A": "查詢緩存 (Query Cache)",
+            "B": "Redo Log 和 Undo Log",
+            "C": "索引 (Index)",
+            "D": "連接池 (Connection Pool)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "當 MemTable 達到一定閾值時，會觸發哪種操作將其數據轉儲到磁盤？ (单选题)",
+        "options": {
+            "A": "Major Compaction (大合併)",
+            "B": "Minor Compaction (小合併)",
+            "C": "CLog Checkpoint",
+            "D": "Partition Split (分區分裂)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 數據庫中數據分片 (Sharding) 的基本單位是？ (单选题)",
+        "options": {
+            "A": "Tenant (租戶)",
+            "B": "Zone (可用區)",
+            "C": "Partition (分區)",
+            "D": "SSTable"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OceanBase 中，哪個內部系統表存儲了集群中所有 OBServer 節點的列表和狀態？ (单选题)",
+        "options": {
+            "A": "__all_server",
+            "B": "__all_tenant",
+            "C": "__all_zone",
+            "D": "__all_table"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 的向量化執行引擎主要是為了提升哪一類負載的性能？ (单选题)",
+        "options": {
+            "A": "高併發 OLTP 事務",
+            "B": "OLAP 分析查詢",
+            "C": "數據導入 (Data Import)",
+            "D": "高可用切換"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 4.0 中，`sys` 租戶運行在哪裡？ (单选题)",
+        "options": {
+            "A": "一個獨立的 RootService 服務器",
+            "B": "OCP 服務器上",
+            "C": "在集群的某個 OBServer 節點上",
+            "D": "OBProxy 節點上"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 實現的 Paxos 協議中，Leader 副本的主要職責是？ (单选题)",
+        "options": {
+            "A": "只讀查詢",
+            "B": "處理所有寫入請求，並將日誌同步給 Follower",
+            "C": "只存儲日誌，不提供服務",
+            "D": "管理 OCP"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase (Oracle 模式) 提供了類似 Oracle 的 `ROWID`，它在 OceanBase 中被稱為什麼？ (单选题)",
+        "options": {
+            "A": "ROWID",
+            "B": "OBJECT_ID",
+            "C": "PARTITION_ID",
+            "D": "TID"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "如果要查看某條 SQL 語句在 OceanBase 中的執行計劃，應該使用哪個命令？ (单选题)",
+        "options": {
+            "A": "SHOW PLAN",
+            "B": "DESCRIBE SQL",
+            "C": "EXPLAIN",
+            "D": "ANALYZE"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 的 HTAP (混合事務與分析處理) 能力，是基於什麼實現的？ (单选题)",
+        "options": {
+            "A": "兩套獨立的存儲引擎（行存和列存）",
+            "B": "一套引擎，同時支持行存和列存",
+            "C": "將數據同步到專門的數據倉庫",
+            "D": "只使用內存"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 單機版 (All-in-One) 部署，其本質是？ (单选题)",
+        "options": {
+            "A": "一個模擬器，不能用於生產",
+            "B": "一個精簡了內核的、單進程的 OBServer",
+            "C": "將 OBServer, OBProxy, OCP 打包在一個進程中",
+            "D": "一個容器化的 OBProxy"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，副本 (Replica) 類型為 `F` (Full) 的含義是？ (单选题)",
+        "options": {
+            "A": "只讀副本 (Follower)",
+            "B": "全功能副本 (包含日誌和數據)",
+            "C": "快速失敗副本 (Fast-Fail)",
+            "D": "日誌副本 (Log-Only)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "以下哪個不是 OceanBase 4.0 存算分離架構的優勢？ (单选题)",
+        "options": {
+            "A": "計算和存儲資源獨立彈性擴展",
+            "B": "計算節點無狀態，啟動恢復快",
+            "C": "存儲成本降低 (可使用對象存儲)",
+            "D": "完全消除了讀寫數據的網絡延遲"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "OceanBase 數據庫的物理備份是基於什麼實現的？ (单选题)",
+        "options": {
+            "A": "mysqldump 或 ob-dumper",
+            "B": "CLog 日誌流 + SSTable 快照",
+            "C": "LVM 卷快照",
+            "D": "導出表結構和數據"
+        },
+        "answer": "B"
+
+    },
+    {
+        "question": "OceanBase 的「多租戶」架構，其資源隔離是基於操作系統的什麼技術實現的？ (单选题)",
+        "options": {
+            "A": "虛擬機 (Virtual Machine)",
+            "B": "CGroup 和 Namespace",
+            "C": "Docker 容器",
+            "D": "物理服務器隔離"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OCP 中創建一個租戶時，`Unit` (UnitConfig) 用來定義什麼？ (单选题)",
+        "options": {
+            "A": "租戶的兼容模式 (MySQL/Oracle)",
+            "B": "租戶的 CPU 和 Memory 資源規格",
+            "C": "租戶的副本數量",
+            "D": "租戶的備份策略"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的哪種副本類型只存儲 CLog，不存儲 SSTable 數據？ (单选题)",
+        "options": {
+            "A": "F (Full Replica)",
+            "B": "L (Log Replica)",
+            "C": "R (Read-only Replica)",
+            "D": "D (Data Replica)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 中，如果我想使用 OBD 部署一個單機版集群，配置文件中 `home_path` 指的是？ (单选题)",
+        "options": {
+            "A": "OBD 程序的安裝目錄",
+            "B": "OCP 服務器的目錄",
+            "C": "OceanBase 數據庫運行時數據和日誌的根目錄",
+            "D": "OBProxy 的配置目錄"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 的全局時間戳服務 (GTS) 解決了什麼核心問題？ (单选题)",
+        "options": {
+            "A": "保證日誌的順序",
+            "B": "提供全局一致的讀取快照版本",
+            "C": "生成主鍵 ID",
+            "D": "服務器時間同步"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，`Unit` 是資源分配的單位，它實際被調度到哪個物理組件上？ (单选题)",
+        "options": {
+            "A": "OBProxy",
+            "B": "OBAgent",
+            "C": "OBServer (進程)",
+            "D": "OCP"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OBCA (OceanBase Certified Associate) 認證，主要考察的知識範圍是？ (单选题)",
+        "options": {
+            "A": "OceanBase 4.x 內核源碼分析",
+            "B": "OceanBase 產品架構、核心概念和基礎 SQL 操作",
+            "C": "OceanBase 性能調優和故障排除",
+            "D": "OCP 平台的二次開發"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 引入的新特性包括哪些？ (多选题)",
+        "options": {
+            "A": "存算分離架構",
+            "B": "單機分布式一體化",
+            "C": "日誌即數據 (Log-as-Data)",
+            "D": "全新的向量化分析引擎"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "一個典型的 OceanBase 生產部署方案，通常會包含哪些組件？ (多选题)",
+        "options": {
+            "A": "OBServer (數據庫服務)",
+            "B": "OBProxy (代理服務)",
+            "C": "OCP (管控平台)",
+            "D": "OBAgent (主機代理)"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 數據庫支持的副本 (Replica) 類型有哪些？ (多选题)",
+        "options": {
+            "A": "F (全功能副本)",
+            "B": "L (日誌副本)",
+            "C": "R (只讀副本)",
+            "D": "M (元數據副本)"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 的「多租戶」架構，為租戶隔離了哪些資源？ (多选题)",
+        "options": {
+            "A": "CPU",
+            "B": "Memory",
+            "C": "Disk (存儲空間)",
+            "D": "IOPS"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "SSTable (Sorted String Table) 具有哪些特性？ (多选题)",
+        "options": {
+            "A": "不可變 (Immutable)",
+            "B": "數據有序存儲",
+            "C": "存儲在磁盤上",
+            "D": "由 Microblock (微塊) 組成"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OBCA 認證考試涵蓋了哪些基礎的分布式理論？ (多选题)",
+        "options": {
+            "A": "CAP 理論",
+            "B": "BASE 理論",
+            "C": "Paxos 一致性協議",
+            "D": "MapReduce"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 數據庫的 OBProxy 組件提供了哪些核心功能？ (多选题)",
+        "options": {
+            "A": "SQL 請求路由 (自動轉發到 Leader 副本)",
+            "B": "負載均衡",
+            "C": "防 SQL 注入",
+            "D": "持久化存儲數據"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 4.x 使用 `obd` 工具可以執行哪些操作？ (多选题)",
+        "options": {
+            "A": "部署 OceanBase 集群 (單機或分布式)",
+            "B": "啟動 / 停止 OceanBase 集群",
+            "C": "銷毀 (destroy) 已部署的集群",
+            "D": "監控 SQL 性能"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 4.0 的存算分離架構，支持哪些類型的共享存儲？ (多选题)",
+        "options": {
+            "A": "NFS (網絡文件系統)",
+            "B": "HDFS (Hadoop 分佈式文件系統)",
+            "C": "S3 (對象存儲)",
+            "D": "本地 SSD"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "在 OceanBase 中，以下哪些屬於數據控制語言 (DCL)？ (多选题)",
+        "options": {
+            "A": "CREATE USER",
+            "B": "GRANT",
+            "C": "REVOKE",
+            "D": "SELECT"
+        },
+        "answer": "A,B,C"
     }
 ]
