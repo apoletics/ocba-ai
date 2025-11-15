@@ -1,1 +1,482 @@
-[]
+[
+    {
+        "question": "在 OceanBase 4.x 中，『日志即数据』(Log-as-Data) 架构的引入，意味着不再需要传统数据库中的 Redo Log 和 Undo Log。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库是一个纯粹的 OLTP (在线事务处理) 系统，不支持 OLAP (在线分析处理)。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的 OCP (OceanBase Cloud Platform) 平台是可选组件，即使没有 OCP，也可以通过命令行工具管理整个集群。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 采用 Paxos 协议来保证副本之间的数据一致性。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 的单机部署模式主要用于生产环境的高可用部署。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，『租户 (Tenant)』是资源隔离的基本单位，类似于一个独立的数据库实例。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库的『Zone』(可用区) 是一个逻辑概念，与物理的数据中心 (IDC) 没有必然的对应关系。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的 HTAP (混合事务与分析处理) 能力，依赖于其列式存储引擎。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 引入的存算分离架构，其『计算节点』是无状态的。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OBCA 认证主要考察的是 OceanBase 4.x 版本的新特性和架构。 (判断题)",
+        "options": {
+            "A": "正确",
+            "B": "错误"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 4.0 架构中，哪个组件在存算分离模式下负责持久化存储基线数据 (SSTable)？ (单选题)",
+        "options": {
+            "A": "本地磁盘",
+            "B": "OBServer 的内存",
+            "C": "共享存储 (如 NFS 或 S3)",
+            "D": "RootService"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 4.0 强调的『单机分布式一体化』架构中，单机模式是基于哪个组件实现的？ (单选题)",
+        "options": {
+            "A": "一个精简版的 OBServer",
+            "B": "OBProxy",
+            "C": "OCP",
+            "D": "一个完整的 RootService"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库中，数据写入时首先进入的是？ (单选题)",
+        "options": {
+            "A": "SSTable (基线数据)",
+            "B": "CLog (事务日志)",
+            "C": "MemTable (内存中的增量数据)",
+            "D": "OBProxy 缓存"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 数据库的 OBProxy 扮演的核心角色是？ (单选题)",
+        "options": {
+            "A": "数据存储节点",
+            "B": "集群管理和调度",
+            "C": "SQL 请求的路由和代理",
+            "D": "数据备份和恢复"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OceanBase 中，定期的『合并 (Compaction)』操作的主要目的是什么？ (单选题)",
+        "options": {
+            "A": "将内存中的增量数据 (MemTable) 刷到磁盘，并与基线数据 (SSTable) 合并",
+            "B": "仅仅是删除过期数据",
+            "C": "备份 CLog 日志",
+            "D": "选举新的 Leader 副本"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 架构中，RootService (RS) 的角色发生了什么变化？ (单选题)",
+        "options": {
+            "A": "被完全移除，功能合并到 OBServer",
+            "B": "功能不变，但独立部署",
+            "C": "演变为一个系统租户，运行在普通的 OBServer 上",
+            "D": "功能被 OCP 完全替代"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 数据库的最小存储单元是？ (单选题)",
+        "options": {
+            "A": "Data Block (数据块)",
+            "B": "SSTable (有序字符串表)",
+            "C": "Microblock (微块)",
+            "D": "Partition (分区)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OceanBase 中，哪个视图可以用来查看集群中所有 OBServer 节点的状态？ (单选题)",
+        "options": {
+            "A": "V$OB_SERVERS",
+            "B": "GV$OB_SERVERS",
+            "C": "DBA_SERVERS",
+            "D": "SYS.SERVERS"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.x 引入的命令行部署运维工具是？ (单选题)",
+        "options": {
+            "A": "OBD (OceanBase Deployer)",
+            "B": "OCP (OceanBase Cloud Platform)",
+            "C": "OBAgent",
+            "D": "OBAdmin"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库实现高可用的基础是？ (单选题)",
+        "options": {
+            "A": "数据分片 (Partition)",
+            "B": "多副本和 Paxos 协议",
+            "C": "多租户隔离",
+            "D": "OBProxy 负载均衡"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 CAP 理论中，OceanBase 作为一个分布式数据库，它优先保证了哪两个特性？ (单选题)",
+        "options": {
+            "A": "C (一致性) 和 A (可用性)",
+            "B": "A (可用性) 和 P (分区容错性)",
+            "C": "C (一致性) 和 P (分区容错性)",
+            "D": "C, A, P 三者都保证"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 4.0 存算分离架构中，『计算节点』(OBServer) 主要负责什么工作？ (单选题)",
+        "options": {
+            "A": "持久化存储 SSTable",
+            "B": "执行 SQL 和事务处理",
+            "C": "存储 CLog",
+            "D": "管理共享存储设备"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，『租户』(Tenant) 是基于什么来实现资源隔离的？ (单选题)",
+        "options": {
+            "A": "物理服务器隔离",
+            "B": "操作系统容器 (如 Docker)",
+            "C": "CGroup 和命名空间 (Namespace)",
+            "D": "虚拟机 (VM)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 数据库默认的 SQL 兼容模式是？ (单选题)",
+        "options": {
+            "A": "MySQL",
+            "B": "Oracle",
+            "C": "PostgreSQL",
+            "D": "SQL Server"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 的物理备份是基于什么技术实现的？ (单选题)",
+        "options": {
+            "A": "逻辑导出 (ob-dumper)",
+            "B": "复制 SSTable 和 CLog 日志流",
+            "C": "存储卷快照",
+            "D": "导出 SQL 语句"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "当客户端连接 OceanBase 时，它首先应该连接到哪个组件？ (单选题)",
+        "options": {
+            "A": "任一 OBServer 节点",
+            "B": "RootService 所在节点",
+            "C": "OBProxy (或 LVS)",
+            "D": "OCP 平台"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "OceanBase 4.0 中引入的全新向量化 SQL 引擎，主要目的是提升哪方面的性能？ (单选题)",
+        "options": {
+            "A": "OLTP 事务处理",
+            "B": "OLAP 分析查询",
+            "C": "数据写入速度",
+            "D": "集群高可用切换"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，数据分区的单位是？ (单选题)",
+        "options": {
+            "A": "Zone (可用区)",
+            "B": "Region (地域)",
+            "C": "Partition (分区)",
+            "D": "Tenant (租户)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OCP 平台上创建一个『集群』时，最核心的步骤是？ (单选题)",
+        "options": {
+            "A": "安装 OBAgent",
+            "B": "添加主机 (OBServer 服务器)",
+            "C": "配置 OBProxy",
+            "D": "创建租户"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库的事务引擎保证了事务的 ACID 特性，其中 'D' (Durability) 是如何保证的？ (单选题)",
+        "options": {
+            "A": "数据写入内存 (MemTable) 即A",
+            "B": "CLog (事务日志) 多数派落盘成功",
+            "C": "数据合并到 SSTable",
+            "D": "OBProxy 确认收到"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 中，`sys` 租户是一个什么角色的租户？ (单选题)",
+        "options": {
+            "A": "用于 OLAP 分析的租户",
+            "B": "管理集群元数据的系统租户",
+            "C": "普通业务租户",
+            "D": "MySQL 兼容模式的租户"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OceanBase 中，如果一个 Zone 发生故障，集群能保持服务可用的前提是？ (单选题)",
+        "options": {
+            "A": "集群至少有 3 个 Zone，且数据副本为 3 副本",
+            "B": "集群至少有 2 个 Zone",
+            "C": "OCP 必须在线",
+            "D": "OBProxy 必须在该 Zone 之外"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 数据库的数据存储在 SSTable 中，SSTable 文件的特性是？ (单选题)",
+        "options": {
+            "A": "可变的，允许原地修改",
+            "B": "不可变的，一旦生成不再修改",
+            "C": "只存储在内存中",
+            "D": "未排序的"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 4.0 的『存算一体』(All-in-One) 部署模式指的是？ (单选题)",
+        "options": {
+            "A": "存算分离模式",
+            "B": "传统的计算和存储耦合在同一 OBServer 节点的模式",
+            "C": "单机部署模式",
+            "D": "只使用 OCP 的模式"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "在 OCP 中查看 OceanBase 性能时，『QPS』指标通常指的是？ (单选题)",
+        "options": {
+            "A": "每秒事务数 (Transactions Per Second)",
+            "B": "每秒 SQL 查询次数 (Queries Per Second)",
+            "C": "SQL 平均响应时间",
+            "D": "CPU 使用率"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 的『分区表』功能主要解决了什么问题？ (单选题)",
+        "options": {
+            "A": "数据高可用",
+            "B": "单表数据量过大时的水平扩展和管理",
+            "C": "多租户隔离",
+            "D": "SQL 兼容性"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库的『CLog』(Commit Log) 的主要作用是？ (单选题)",
+        "options": {
+            "A": "存储基线数据",
+            "B": "记录 SQL 查询历史",
+            "C": "记录数据变更的事务日志，用于崩溃恢复和副本同步",
+            "D": "存储元数据"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "在 OceanBase 4.0 中，如果使用 OBD 部署一个三节点的『存算一体』集群，正确的命令是？ (单选题)",
+        "options": {
+            "A": "obd cluster deploy myob -c all-in-one.yaml",
+            "B": "obd cluster deploy myob -c separated.yaml",
+            "C": "obd start myob",
+            "D": "obd install myob"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "在 BASE 理论中，'BA' (Basically Available) 指的是什么？ (单选题)",
+        "options": {
+            "A": "强一致性",
+            "B": "基本可用，允许系统在故障时损失部分可用性",
+            "C": "最终一致性",
+            "D": "系统始终可用"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "OceanBase 数据库的『全局时间戳』(GTS) 服务的主要作用是？ (单选题)",
+        "options": {
+            "A": "为分布式事务提供全局统一的事务快照时间",
+            "B": "记录 OCP 的操作时间",
+            "C": "管理 OBServer 的本地时间",
+            "D": "生成 SQL 的执行 ID"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "OceanBase 4.0 相比 3.x 版本有哪些主要的新特性？ (多选题)",
+        "options": {
+            "A": "引入了存算分离架构",
+            "B": "引入了『日志即数据』(Log-as-Data)",
+            "C": "全新的向量化 SQL 引擎",
+            "D": "放弃了多租户架构"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 数据库的核心特性包括哪些？ (多选题)",
+        "options": {
+            "A": "原生分布式架构",
+            "B": "基于 Paxos 的高可用和强一致性",
+            "C": "多租户隔离",
+            "D": "HTAP (混合事务与分析处理)"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OCP (OceanBase Cloud Platform) 提供了哪些运维管理功能？ (多选题)",
+        "options": {
+            "A": "集群部署和生命周期管理",
+            "B": "性能监控和告警",
+            "C": "备份恢复和容灾管理",
+            "D": "租户创建和资源管理"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "OceanBase 数据库支持哪些 SQL 兼容模式？ (多选题)",
+        "options": {
+            "A": "MySQL",
+            "B": "Oracle",
+            "C": "PostgreSQL",
+            "D": "SQL Server"
+        },
+        "answer": "A,B"
+    },
+    {
+        "question": "一个典型的 OceanBase 生产环境集群部署包含哪些组件？ (多选题)",
+        "options": {
+            "A": "OBServer (数据库内核节点)",
+            "B": "OBProxy (数据库代理)",
+            "C": "OCP (运维管理平台)",
+            "D": "OBAgent (主机监控代理)"
+        },
+        "answer": "A,B,C,D"
+    },
+    {
+        "question": "在 OceanBase 4.x 中，使用 `obd` 工具可以执行哪些操作？ (多选题)",
+        "options": {
+            "A": "部署单机或分布式集群",
+            "B": "启动和停止集群服务",
+            "C": "销毁 (destroy) 集群",
+            "D": "执行 SQL 调优"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OceanBase 数据库的存储引擎主要由哪几部分组成？ (多选题)",
+        "options": {
+            "A": "MemTable (内存增量数据)",
+            "B": "SSTable (磁盘基线数据)",
+            "C": "CLog (事务日志)",
+            "D": "OBProxy (代理)"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "在 OceanBase 中，创建一个『租户』(Tenant) 时，需要指定哪些关键资源？ (多选题)",
+        "options": {
+            "A": "CPU 资源 (Unit)",
+            "B": "内存资源 (Memory)",
+            "C": "磁盘空间 (Disk)",
+            "D": "兼容的数据库模式 (MySQL/Oracle)"
+        },
+        "answer": "A,B,D"
+    },
+    {
+        "question": "OceanBase 4.0 存算分离架构可以带来的好处有哪些？ (多选题)",
+        "options": {
+            "A": "计算和存储资源可以独立弹性伸缩",
+            "B": "降低存储成本 (可使用 S3 等对象存储)",
+            "C": "更快的计算节点启动和恢复速度",
+            "D": "完全消除了网络延迟"
+        },
+        "answer": "A,B,C"
+    },
+    {
+        "question": "OBCA (OceanBase Certified Associate) 认证主要考察的知识领域包括？ (多选题)",
+        "options": {
+            "A": "分布式数据库基本理论 (CAP, BASE, Paxos)",
+            "B": "OceanBase 产品架构和核心概念",
+            "C": "OceanBase SQL 基础操作",
+            "D": "OceanBase 4.x 深度内核调优"
+        },
+        "answer": "A,B,C"
+    }
+]
