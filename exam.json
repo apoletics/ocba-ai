@@ -343,7 +343,7 @@
             "C": "OceanBase 分布式架构兼容 MySQL 和 Oracle 数据库，可方便搬迁应用与数据。",
             "D": "OceanBase 分布式数据库要保留多个数据副本，因此存储成本很高。"
         },
-        "answer": "AD"
+        "answer": "A,D"
     },
     {
         "question": "关于数据库的发展与架构演变，以下说法错误的是？",
@@ -353,7 +353,7 @@
             "C": "使用分布式中间件的分布式数据库系统可以很好地处理跨库的 SQL 查询和事务。",
             "D": "原生分布式数据库不依赖分布式中间件，提供透明的扩展能力。"
         },
-        "answer": "BC"
+        "answer": "B,C"
     },
     {
         "question": "关于 OceanBase V4 的日志流副本，以下说法正确的是？",
@@ -363,7 +363,7 @@
             "C": "Leader 副本既可读也可写，是全功能型副本；Follower 副本只能读，是只读型副本。",
             "D": "一个 5 副本的集群中，事务日志只需要 3 个副本强同步，不需要 5 个副本都强同步。"
         },
-        "answer": "AD"
+        "answer": "A,D"
     },
     {
         "question": "关于 OceanBase V4 的负载均衡机制，以下说法正确的是？",
@@ -373,7 +373,7 @@
             "C": "OceanBase 有自动的负载均衡能力，可以将 Table、Partition 均匀地分散在 Zone 内的多个 OBServer 节点上。",
             "D": "OceanBase 有自动的负载均衡能力，可以将 Leader 副本均匀地分散在指定的多个 Primary Zone 中。"
         },
-        "answer": "BCD"
+        "answer": "B,C,D"
     },
     {
         "question": "在 OceanBase 数据库中，关于转储与合并操作的说法，以下哪些是正确的？",
@@ -383,7 +383,7 @@
             "C": "转储操作可以手动触发，也可以由系统自动触发。",
             "D": "合并操作可以减少磁盘空间的使用，因为它会删除失效的多版本数据。"
         },
-        "answer": "ABCD"
+        "answer": "A,B,C,D"
     },
     {
         "question": "OceanBase 数据库支持的隔离级别包括哪些？",
@@ -393,7 +393,7 @@
             "C": "可重复读",
             "D": "读未提交"
         },
-        "answer": "ABC"
+        "answer": "A,B,C"
     },
     {
         "question": "相比集中式数据库，以下哪项是分布式架构下事务处理的挑战？",
@@ -403,7 +403,7 @@
             "C": "数据一致性的挑战",
             "D": "性能下降"
         },
-        "answer": "ABCD"
+        "answer": "A,B,C,D"
     },
     {
         "question": "OceanBase 数据库通过哪些机制来控制事务的并发执行？",
@@ -413,7 +413,7 @@
             "C": "隔离级别",
             "D": "锁"
         },
-        "answer": "BCD"
+        "answer": "B,C,D"
     },
     {
         "question": "OceanBase 数据库支持的分区类型包括以下哪些类型？",
@@ -422,7 +422,7 @@
             "B": "List 分区",
             "C": "Hash 分区"
         },
-        "answer": "ABC"
+        "answer": "A,B,C"
     },
     {
         "question": "OceanBase 数据库提供的导入工具包括？",
@@ -432,7 +432,7 @@
             "C": "LOAD DATA",
             "D": "OBDUMPER"
         },
-        "answer": "ABC"
+        "answer": "A,B,C"
     },
     {
         "question": "通过 OCP 进行 OceanBase 数据库集群扩容，包括以下哪几项？",
@@ -442,7 +442,7 @@
             "C": "添加 OBServer",
             "D": "修改主 Zone"
         },
-        "answer": "AC"
+        "answer": "A,C"
     },
     {
         "question": "通过 OCP 进行租户资源扩容，包括以下哪几项？",
@@ -452,7 +452,7 @@
             "C": "添加 OBServer",
             "D": "调整 Unit 数量"
         },
-        "answer": "ABD"
+        "answer": "A,B,D"
     },
     {
         "question": "OCP Agent 包括以下哪些进程？",
@@ -462,7 +462,7 @@
             "C": "ocp_proxy",
             "D": "ocp_monagent"
         },
-        "answer": "ABD"
+        "answer": "A,B,D"
     },
     {
         "question": "通过 OCP 可对主机进行哪些操作？",
@@ -472,7 +472,7 @@
             "C": "添加主机",
             "D": "删除主机"
         },
-        "answer": "ACD"
+        "answer": "A,C,D"
     },
     {
         "question": "通过 OCP 可对租户做哪些操作？",
@@ -482,6 +482,6 @@
             "C": "锁定租户",
             "D": "创建备租户"
         },
-        "answer": "ABCD"
+        "answer": "A,B,C,D"
     }
 ]
